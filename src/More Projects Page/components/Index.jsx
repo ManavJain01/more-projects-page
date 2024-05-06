@@ -14,8 +14,9 @@ const Index = () => {
           <li>MERN Projects</li>
           <li><a href="https://manavjain01.github.io/MachineLearning/MainFile/#">ML Projects</a></li>
           <li><a href="https://my-java-projects-7a17e.web.app/#">Java Projects</a></li>
+          <li><a href="https://manavjain01.github.io/BlockChain-Projects/MainFile/">BlockChain Projects</a></li>
           <li>Scratch Projects</li>
-          <li>DSA Projects</li>
+          <li><a href="https://github.com/ManavJain01/DSA-Problems">DSA Projects</a></li>
         </ul>
         <hr />
       </main>
@@ -25,8 +26,9 @@ const Index = () => {
           <li><h1>Manav Jain</h1></li>
           <li>Currently a Front-End Developer</li>
         </ul>
+
         <ul>
-          <li><a href="https://manavjain01.github.io/My-React-Projects/#/Portfolio"><h2>My Portfolio</h2></a></li>
+          <li><a href="https://manavjain-portfolio.vercel.app/"><h2>My Portfolio</h2></a></li>
         </ul>
       </footer>
     </div>

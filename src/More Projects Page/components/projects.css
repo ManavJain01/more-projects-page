@@ -7,7 +7,7 @@
 
 body{
   color: white;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header{
@@ -21,15 +21,15 @@ header{
 main{
   min-height: 60vh;
   background-color: yellow;
-  padding: 5%;
+  padding: 3rem;
 }
 
 main ul{
+  padding: 0 3rem;
   white-space: nowrap;
   display: flex;
-  flex-wrap: wrap row;
-  gap:5%;
-  list-style: none;
+  flex-wrap: wrap;
+  gap: 5rem;
   font-size:larger;
 }
 
@@ -37,7 +37,7 @@ main ul li{
   background-color: rgb(255, 166, 0);
   width: fit-content;
   height: 3rem;
-  padding: 10px 20px;
+  padding: 5px 10px;
   border: 2px solid black;
   border-radius: 5px;
 }
@@ -53,22 +53,24 @@ main ul li:hover{
 }
 
 main hr{
-  margin: 2%;
+  margin: 2rem 0;
   width: 80vw;
   border: 1px solid beige;
 }
 
 footer{
   min-height: 20vh;
+  width: 100vw;
   background-color: black;
   display: flex;
+  flex-direction: column;
 }
 
 footer ul{
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 5%;
+  padding: 5px;
   list-style: none;
 }
 
