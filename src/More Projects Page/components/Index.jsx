@@ -57,14 +57,14 @@ const Index = () => {
         <h1 className="text-5xl">Projects</h1>
       </header>
 
-      <main className="bg-yellow-400 min-h-[60vh] p-10">
-        <ul className="flex gap-10 flex-wrap whitespace-nowrap">
+      <main className="bg-yellow-400 min-h-[60vh] p-10 flex flex-col">
+        {/* <ul className="flex gap-10 flex-wrap whitespace-nowrap">
           {projects.map((e,i) => {
             return(
               <li key={i} className="w-fit h-[3rem]"><a href={e.link}>{e.name}</a></li>
             )
           })}
-        </ul>
+        </ul> */}
         <hr />
 
         {/* Carousal */}
@@ -79,6 +79,7 @@ const Index = () => {
             })
           }
         </Slider>
+        <hr />
       </main>
 
       <footer className="bg-black text-white text-2xl h-[20vh] flex flex-col">
