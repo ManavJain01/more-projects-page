@@ -3,8 +3,6 @@ import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-import './projects.css'
-
 const Index = () => {
   // Carousel Settings
   const settings = {
@@ -52,48 +50,47 @@ const Index = () => {
   ]
 
   return (
-    <div className="bg-white">
-      <header>
-        <h1 className="text-5xl">Projects</h1>
+    <body className="relative min-h-lvh overflow-x-hidden">
+      <div className="absolute top-0 left-0 bg-gradient-to-b from-[#f1f4f9] to-[#dff1ff] blur-[150px] h-lvh w-lvw flex flex-col justify-between">
+        <div className="bg-pink-600 w-[90vw] h-[50vh] mx-auto" />
+
+        <div className="bg-yellow-300 w-[80vw] h-[40vh] mx-auto">
+          <div className="bg-blue-400 w-1/2 h-full mx-auto" />
+        </div> 
+      </div>
+
+      <header className="text-5xl min-h-[20vh] p-12">
+        <div className="flex justify-between">
+          <div className="flex flex-col items-center">
+            <h1 className="font-bold">Manav Jain</h1>
+            <span className="text-lg">A Full Stack Developer</span>
+            <a href="https://manavjain-portfolio.vercel.app/" className="text-lg text-blue-700 hover:underline">My Portfolio</a>
+          </div>
+
+          <span className="font-bold mx-auto">My Projects</span>
+        </div>
       </header>
 
-      <main className="bg-yellow-400 min-h-[60vh] p-10 flex flex-col">
-        {/* <ul className="flex gap-10 flex-wrap whitespace-nowrap">
-          {projects.map((e,i) => {
-            return(
-              <li key={i} className="w-fit h-[3rem]"><a href={e.link}>{e.name}</a></li>
-            )
-          })}
-        </ul> */}
-        <hr />
+      <main className="flex flex-col gap-10 p-12">
 
-        {/* Carousal */}
-        <Slider {...settings}>
-          {
-            projects.map((e, i) =>{
-              return(
-                <a key={i} href={e.link} className="bg-[#FFA600] text-xl h-[10rem] p-5 border-2 border-black rounded-md">
-                  {e.name}
-                </a>
-              )
-            })
-          }
-        </Slider>
-        <hr />
+        <div>
+          {/* Carousal */}
+          <Slider {...settings}>
+            {
+              projects.map((e, i) =>{
+                return(
+                  <a key={i} href={e.link} className="bg-gradient-to-t from-blue-300 to-pink-200 text-xl text-center h-[10rem] p-5 py-12 border-2 border-gray-200 rounded-md">
+                    {e.name}
+                  </a>
+                )
+              })
+            }
+          </Slider>
+        </div>
+
       </main>
-
-      <footer className="bg-black text-white text-2xl h-[20vh] flex flex-col">
-        <ul className="flex flex-col text-center p-2">
-          <li><h1>Manav Jain</h1></li>
-          <li>A Full Stack Developer</li>
-        </ul>
-
-        <ul className="flex flex-col text-center p-2 list-none">
-          <li><a href="https://manavjain-portfolio.vercel.app/"><h2 className="mt-[10px]">My Portfolio</h2></a></li>
-        </ul>
-      </footer>
-    </div>
+    </body>
   )
 }
 
-export default Index
+export default Index;
