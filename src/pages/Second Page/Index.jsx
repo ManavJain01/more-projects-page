@@ -95,8 +95,8 @@ export default function Index() {
             {
               vanillaProjects.map((e, i) =>{
                 return(
-                  <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[12rem] border-2 border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-md">
-                    <img src={e.img} alt={e.project} className="h-36 w-full" />
+                  <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[14rem] border-2 border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-md">
+                    <img src={e.img} alt={e.project} className="h-44 w-full" />
                     <span>{e.project}</span>                    
                   </a>
                 )
@@ -113,8 +113,8 @@ export default function Index() {
             {
               reactProjects.map((e, i) =>{
                 return(
-                  <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[12rem] border-2 border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-md">
-                    <img src={e.img} alt={e.project} className="h-36 w-full" />
+                  <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[14rem] border-2 border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-md">
+                    <img src={e.img} alt={e.project} className="h-44 w-full" />
                     <span>{e.project}</span>                    
                   </a>
                 )

@@ -86,15 +86,26 @@ const Index = () => {
       </div>
 
       <header className="relative text-5xl flex justify-between items-center flex-wrap min-h-[20vh] px-12 py-5">
-        <div className="relative bg-[#ffffff1a] backdrop-blur-lg flex flex-col items-center p-5 border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg">
-          <h1 className="font-bold">Manav Jain</h1>
-          <span className="text-lg">A Full Stack Developer</span>
-          <a href="https://manavjain-portfolio.vercel.app/" className="text-lg text-blue-700 hover:underline">My Portfolio</a>
-          
-          
-          <div className="absolute -top-4 -left-10 w-[4rem] h-[4rem] bg-[#ffffff1a] animate-pulse border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg" />
-          <div className="absolute top-12 -right-12 w-[4rem] h-[4rem] bg-[#ffffff1a] animate-pulse border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg" />
-          <div className="absolute -bottom-6 -left-12 w-[4rem] h-[4rem] bg-[#ffffff1a] animate-pulse border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg" />
+        <div className="relative">
+          <div className="z-20 peer relative bg-[#ffffff1a] backdrop-blur-lg flex flex-col items-center p-5 border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg">
+            <h1 className="font-bold">Manav Jain</h1>
+            <span className="text-lg">A Full Stack Developer</span>
+            
+            <div className="absolute -top-4 -left-10 w-[4rem] h-[4rem] bg-[#ffffff1a] animate-pulse border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg" />
+            <div className="absolute top-12 -right-12 w-[4rem] h-[4rem] bg-[#ffffff1a] animate-pulse border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg" />
+            <div className="absolute -bottom-6 -left-12 w-[4rem] h-[4rem] bg-[#ffffff1a] animate-pulse border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg" />
+          </div>
+
+          <a
+            href="https://manavjain-portfolio.vercel.app/"
+            className="absolute -bottom-2 left-24 text-lg text-blue-700 hover:underline
+              p-1 border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg
+              duration-700
+              animate-bottom-transition-reverse peer-hover:animate-bottom-transition hover:animate-bottom-transition
+              "
+          >
+            My Portfolio
+          </a>
         </div>
 
         <div className="relative mx-auto">
