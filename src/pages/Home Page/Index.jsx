@@ -85,14 +85,27 @@ const Index = () => {
         </div> 
       </div>
 
-      <header className="relative text-5xl flex justify-between flex-wrap min-h-[20vh] p-12">
-        <div className="flex flex-col items-center">
+      <header className="relative text-5xl flex justify-between items-center flex-wrap min-h-[20vh] px-12 py-5">
+        <div className="relative bg-[#ffffff1a] backdrop-blur-lg flex flex-col items-center p-5 border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg">
           <h1 className="font-bold">Manav Jain</h1>
           <span className="text-lg">A Full Stack Developer</span>
           <a href="https://manavjain-portfolio.vercel.app/" className="text-lg text-blue-700 hover:underline">My Portfolio</a>
+          
+          
+          <div className="absolute -top-4 -left-10 w-[4rem] h-[4rem] bg-[#ffffff1a] animate-pulse border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg" />
+          <div className="absolute top-12 -right-12 w-[4rem] h-[4rem] bg-[#ffffff1a] animate-pulse border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg" />
+          <div className="absolute -bottom-6 -left-12 w-[4rem] h-[4rem] bg-[#ffffff1a] animate-pulse border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg" />
         </div>
 
-        <span className="font-bold mx-auto">My Projects</span>
+        <div className="relative mx-auto">
+          <span className="font-bold">My Projects</span>
+
+          <div className="absolute top-0 -left-2 w-[2rem] h-[2rem] bg-[#ffffff1a] animate-pulse border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg" />
+          <div className="absolute -bottom-4 left-24 w-[2rem] h-[2rem] bg-[#ffffff1a] animate-pulse border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg" />
+          <div className="absolute top-0 right-16 w-[2rem] h-[2rem] bg-[#ffffff1a] animate-pulse border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg" />
+          <div className="absolute bottom-0 right-2 w-[2rem] h-[2rem] bg-[#ffffff1a] animate-pulse border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg" />
+        </div>
+      
       </header>
 
       <main className="relative flex flex-col gap-10 p-12">
@@ -102,7 +115,7 @@ const Index = () => {
             {
               projects.map((e, i) =>{
                 return(
-                  <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[10rem] p-5 py-12 border-2 border-gray-200 rounded-md">
+                  <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[10rem] p-5 py-12 border-2 border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-md">
                     {e.name}
                   </a>
                 )
@@ -120,7 +133,7 @@ const Index = () => {
               {
                 majorProjects.map((e, i) =>{
                   return(
-                    <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[12rem] border-2 border-gray-200 rounded-md">
+                    <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[12rem] border-2 border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-md">
                       <img src={e.img} alt={e.project} className="h-36 w-full" />
                       <span>{e.project}</span>                    
                     </a>

@@ -88,14 +88,14 @@ export default function Index() {
 
       <div className="relative flex flex-col gap-10 p-12">
         <div className="flex flex-col gap-10">
-          <a href="https://manavjain01.github.io/My-Mini-Projects/MainFile/" className="font-bold text-5xl">Vanilla Projects</a>
+          <a href="https://manavjain01.github.io/My-Mini-Projects/MainFile/" className="font-bold text-5xl w-fit">Vanilla Projects</a>
 
           {/* Carousal */}
           <Slider {...settings}>
             {
               vanillaProjects.map((e, i) =>{
                 return(
-                  <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[12rem] border-2 border-gray-200 rounded-md">
+                  <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[12rem] border-2 border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-md">
                     <img src={e.img} alt={e.project} className="h-36 w-full" />
                     <span>{e.project}</span>                    
                   </a>
@@ -106,14 +106,14 @@ export default function Index() {
         </div>
 
         <div className="flex flex-col gap-10">
-          <a href="https://manavjain01.github.io/My-React-Projects/#/Body" className="font-bold text-5xl">React Projects</a>
+          <a href="https://manavjain01.github.io/My-React-Projects/#/Body" className="font-bold text-5xl w-fit">React Projects</a>
         
           {/* Carousal */}
           <Slider {...settings}>
             {
               reactProjects.map((e, i) =>{
                 return(
-                  <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[12rem] border-2 border-gray-200 rounded-md">
+                  <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[12rem] border-2 border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-md">
                     <img src={e.img} alt={e.project} className="h-36 w-full" />
                     <span>{e.project}</span>                    
                   </a>

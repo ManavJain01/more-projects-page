@@ -74,7 +74,7 @@ const Index = () => {
       <div className="relative flex flex-col gap-10 p-12">
 
         <div className="flex flex-col gap-10">
-          <a href="https://mern-projects-amber.vercel.app/" className="text-5xl font-bold">MERN Projects</a>
+          <a href="https://mern-projects-amber.vercel.app/" className="text-5xl font-bold w-fit">MERN Projects</a>
           
           <div>
             {/* Carousal */}
@@ -82,7 +82,7 @@ const Index = () => {
               {
                 mernProjects.map((e, i) =>{
                   return(
-                    <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[12rem] border-2 border-gray-200 rounded-md">
+                    <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[12rem] border-2 border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-md">
                       <img src={e.img} alt={e.project} className="h-36 w-full" />
                       <span>{e.project}</span>                    
                     </a>
@@ -94,7 +94,7 @@ const Index = () => {
         </div>
 
         <div className="flex flex-col gap-10">
-          <a href="https://manavjain01.github.io/BlockChain-Projects/MainFile/" className="text-5xl font-bold">BlockChain Projects</a>
+          <a href="https://manavjain01.github.io/BlockChain-Projects/MainFile/" className="text-5xl font-bold w-fit">BlockChain Projects</a>
           
           <div>
             {/* Carousal */}
@@ -102,7 +102,7 @@ const Index = () => {
               {
                 blockchainProjects.map((e, i) =>{
                   return(
-                    <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[12rem] border-2 border-gray-200 rounded-md">
+                    <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[12rem] border-2 border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-md">
                       <img src={e.img} alt={e.project} className="h-36 w-full" />
                       <span>{e.project}</span>                    
                     </a>
