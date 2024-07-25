@@ -10,7 +10,7 @@ function App() {
     <div>
       <Routes>
         {/* Main Page */}
-        <Route path="/" element={<div className="text-green-800">
+        <Route path="/" element={<div className="text-blue-800">
           <HomePage />
           <SecondPage />
           <ThirdPage />

@@ -64,10 +64,10 @@ const Index = () => {
   return (
     <body className="relative h-lvh overflow-x-hidden">
       <div className="absolute top-0 left-0 bg-gradient-to-b from-[#f1f4f9] to-[#dff1ff] blur-[150px] h-lvh w-lvw flex flex-col justify-between">
-        <div className="bg-green-400 w-[90vw] h-[50vh] mx-auto" />
+        <div className="bg-blue-400 w-[90vw] h-[50vh] mx-auto" />
 
         <div className="bg-yellow-300 w-[80vw] h-[40vh] mx-auto">
-          <div className="bg-blue-400 w-1/2 h-full mx-auto" />
+          <div className="bg-red-800 w-1/2 h-full mx-auto" />
         </div> 
       </div>
 
