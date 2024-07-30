@@ -21,6 +21,14 @@ export default {
     animation: {
       'bottom-transition': 'bottom-transition 1.5s ease-in-out forwards',
       'bottom-transition-reverse': 'bottom-transition-reverse 1.5s ease-in-out forwards'
+    },
+    boxShadow: {
+      neuMorphism : '-3px -3px 7px #ffffff, 3px 3px 5px #ceced1',
+      inset_neuMorphism : 'inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1',
+      fullInset_neuMorphism: 'inset -3px -3px 7px #ffffff, inset 3px 3px 5px #ceced1, 3px 3px 5px #ceced1',
+      clock: '-3px -3px 7px #ffffff73, 3px 3px 5px rgba(94,104,121,0.288)',
+      clayMorphism: 'inset -0.6em -0.6em 1em #bfd1ff, inset 0.4em 0.4em 0.5em #eff3ff, 0.8em 0.8em 2em #839ad7',
+      reverse_clayMorphism: 'inset -0.6em -0.6em 1em #bfd1ff, inset 0.4em 0.4em 0.5em #eff3ff, 0.8em 0.6em 0.6em -0.3em #839ad7',
     }
   },
   },

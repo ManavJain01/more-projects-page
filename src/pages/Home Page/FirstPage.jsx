@@ -8,6 +8,12 @@ import Dismefa from './images/First Page/Dismefa.png'
 import ChatDAPP from './images/First Page/Chat_DAPP.png'
 import FoodDelivery from './images/First Page/Food Delivery App.png'
 
+// Importing React Packages
+import { Link } from 'react-router-dom'
+
+// Importing local files
+import data from '../../Data/api.json'
+
 const Index = () => {
   // Carousel Settings
   const settings = {
@@ -73,8 +79,6 @@ const Index = () => {
     }
   ]
 
-  
-
   return (
     <body className="relative h-lvh overflow-x-hidden">
       <div className="absolute top-0 left-0 bg-gradient-to-b from-[#f1f4f9] to-[#dff1ff] blur-[150px] h-lvh w-lvw flex flex-col justify-between">
@@ -88,16 +92,16 @@ const Index = () => {
       <header className="relative text-5xl flex justify-between items-center flex-wrap min-h-[20vh] px-12 py-5">
         <div className="relative">
           <div className="z-20 peer relative bg-[#ffffff1a] backdrop-blur-lg flex flex-col items-center p-5 border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg">
-            <h1 className="font-bold">Manav Jain</h1>
-            <span className="text-lg">A Full Stack Developer</span>
+            <h1 className="font-bold">{data['my info'].name}</h1>
+            <span className="text-lg">{data['my info'].field}</span>
             
             <div className="absolute -top-4 -left-10 w-[4rem] h-[4rem] bg-[#ffffff1a] animate-pulse border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg" />
             <div className="absolute top-12 -right-12 w-[4rem] h-[4rem] bg-[#ffffff1a] animate-pulse border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg" />
             <div className="absolute -bottom-6 -left-12 w-[4rem] h-[4rem] bg-[#ffffff1a] animate-pulse border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg" />
           </div>
 
-          <a
-            href="https://manavjain-portfolio.vercel.app/"
+          <Link
+            to={data['my info'].portfolio}
             className="absolute -bottom-2 left-24 text-lg text-blue-700 hover:underline
               p-1 border-[1px] border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-lg shadow-lg
               duration-700
@@ -105,7 +109,7 @@ const Index = () => {
               "
           >
             My Portfolio
-          </a>
+          </Link>
         </div>
 
         <div className="relative mx-auto">
