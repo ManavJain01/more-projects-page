@@ -4,16 +4,16 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
 // Import Images
-import Flappy from './images/Flappy.png'
-import WeatherApp from './images/WeatherApp.png'
-import TicTacToe from './images/TicTacToe.png'
-import ToDo from './images/ToDo.png'
-import ColorFlipper from './images/ColorFlipper.png'
-import ImageGallery from './images/ImageGallery.png'
+import Flappy from './images/Second Page/Flappy.png'
+import WeatherApp from './images/Second Page/WeatherApp.png'
+import TicTacToe from './images/Second Page/TicTacToe.png'
+import ToDo from './images/Second Page/ToDo.png'
+import ColorFlipper from './images/Second Page/ColorFlipper.png'
+import ImageGallery from './images/Second Page/ImageGallery.png'
 
-import DiceGame from './images/DiceGame.png'
-import FoodyZone from './images/foody zone.png'
-import Firebase from './images/firebase contact app.png'
+import DiceGame from './images/Second Page/DiceGame.png'
+import FoodyZone from './images/Second Page/foody zone.png'
+import Firebase from './images/Second Page/firebase contact app.png'
 
 export default function Index() {
   // Carousel Settings

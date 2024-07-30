@@ -4,11 +4,11 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
 // Importing Images
-import Dismefa from './images/Dismefa.png'
-import FoodDelivery from './images/Food Delivery App.png'
-import NextAuth from './images/NextAuth.png'
-import WebStreaming from './images/webStreaming.png'
-import ChatDAPP from './images/Chat_DAPP.png'
+import Dismefa from './images/Third Page/Dismefa.png'
+import FoodDelivery from './images/Third Page/Food Delivery App.png'
+import NextAuth from './images/Third Page/NextAuth.png'
+import WebStreaming from './images/Third Page/webStreaming.png'
+import ChatDAPP from './images/Third Page/Chat_DAPP.png'
 
 const Index = () => {
   // Carousel Settings
