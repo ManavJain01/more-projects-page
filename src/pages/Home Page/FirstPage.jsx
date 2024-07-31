@@ -24,42 +24,6 @@ const Index = () => {
     slidesToScroll: 3
   }
 
-  // Projects
-  const projects = [
-    {
-      name: "MERN Projects",
-      link: "https://mern-projects-amber.vercel.app/"
-    },
-    {
-      name: "Next Js Projects",
-      link: "/NextJs"
-    },
-    {
-      name: "React Projects",
-      link: "https://manavjain01.github.io/My-React-Projects/#/Body"
-    },
-    {
-      name: "BlockChain Projects",
-      link: "https://manavjain01.github.io/BlockChain-Projects/MainFile/"
-    },
-    {
-      name: "HTML/CSS/JS Projects",
-      link: "https://manavjain01.github.io/My-Mini-Projects/MainFile/"
-    },
-    {
-      name: "ML Projects",
-      link: "https://manavjain01.github.io/MachineLearning/MainFile/#"
-    },
-    {
-      name: "Java Projects",
-      link: "https://my-java-projects-7a17e.web.app/#"
-    },
-    {
-      name: "DSA Projects",
-      link: "https://github.com/ManavJain01/DSA-Problems"
-    }
-  ]
-
   // Major Projects
   const majorProjects = [
     {
@@ -133,11 +97,11 @@ const Index = () => {
           {/* Carousal */}
           <Slider {...settings}>
             {
-              projects.map((e, i) =>{
+              Object.keys(data.projects).map((e, i) =>{
                 return(
-                  <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[10rem] p-5 py-12 border-2 border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-md">
-                    {e.name}
-                  </a>
+                  <Link key={i} to={data.projects[e].link} className="bg-[#ffffff1a] text-xl text-center h-[10rem] p-5 py-12 border-2 border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-md">
+                    {e}
+                  </Link>
                 )
               })
             }
@@ -153,10 +117,10 @@ const Index = () => {
               {
                 majorProjects.map((e, i) =>{
                   return(
-                    <a key={i} href={e.link} className="bg-[#ffffff1a] text-xl text-center h-[14rem] border-2 border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-md">
+                    <Link key={i} to={e.link} className="bg-[#ffffff1a] text-xl text-center h-[14rem] border-2 border-[#ffffff80] border-b-[#ffffff33] border-r-[#ffffff33] rounded-md">
                       <img src={e.img} alt={e.project} className="h-48 w-full" />
                       <span>{e.project}</span>                    
-                    </a>
+                    </Link>
                   )
                 })
               }

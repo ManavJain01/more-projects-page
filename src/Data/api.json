@@ -13,26 +13,44 @@
     "buymyacoffee" : "https://buymeacoffee.com/manavjain01"
   },
   "projects" : {
-    "vanilla" : {
+    "Vanilla Projects" : {
+      "link" : "https://manavjain01.github.io/My-Mini-Projects/MainFile/"
 
     },
-    "reactjs" : {
+    "Reactjs Projects" : {
+      "link" : "https://manavjain01.github.io/My-React-Projects/#/Body"
 
     },
-    "mern" : {
+    "MERN Projects" : {
+      "link" : "https://mern-projects-amber.vercel.app/",
+      "projects" : [
+
+      ]
+    },
+    "Next Js Projects" : {
+      "link" : "/NextJs",
+      "projects" : [
+        {
+          "project" : "Next Authentication",
+          "img" : "src/Data/images/NextJs/NextAuth.png",
+          "p1" : "A Next Js Based Authentication Application"
+        }
+      ]
+    },
+    "Machine Learning Projects" : {
+      "link" : "https://manavjain01.github.io/MachineLearning/MainFile/#"
 
     },
-    "next js" : {
+    "Blockchain Projects" : {
+      "link" : "https://manavjain01.github.io/BlockChain-Projects/MainFile/"
 
     },
-    "machine learning" : {
-
-    },
-    "blockchain" : {
-
-    },
-    "java" : {
+    "Java Projects" : {
+      "link" : "https://my-java-projects-7a17e.web.app/#"
       
+    },
+    "DSA Problems" : {
+      "link" : "https://github.com/ManavJain01/DSA-Problems"
     }
   }
 }
