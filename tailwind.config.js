@@ -30,6 +30,7 @@ export default {
       dark_inset_neuMorphism: 'inset 2px 2px 5px rgba(0,0,0,0.5), inset -3px -3px 7px rgba(255,255,255, 0.05)',
       dark_fullInset_neuMorphism: 'inset 2px 2px 5px rgba(0,0,0,0.5), inset -3px -3px 7px rgba(255,255,255, 0.05), -3px -3px 7px rgba(255,255,255, 0.05)',
       clock: '-3px -3px 7px #ffffff73, 3px 3px 5px rgba(94,104,121,0.288)',
+      dark_clock: '-3px -3px 7px rgba(0,0,0,0.5), 3px 3px 5px rgba(255,255,255, 0.05)',
       clayMorphism: 'inset -0.6em -0.6em 1em #bfd1ff, inset 0.4em 0.4em 0.5em #eff3ff, 0.8em 0.8em 2em #839ad7',
       reverse_clayMorphism: 'inset -0.6em -0.6em 1em #bfd1ff, inset 0.4em 0.4em 0.5em #eff3ff, 0.8em 0.6em 0.6em -0.3em #839ad7',
     }

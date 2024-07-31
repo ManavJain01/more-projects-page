@@ -26,9 +26,9 @@ function Clock({morphism}) {
 
   return (
     <div
-      className={`relative w-[200px] h-[200px] rounded-full shadow-clock
-        before:absolute before:top-2 before:left-2 before:content-[''] before:w-[185px] before:h-[185px] before:rounded-full before:${morphism[1]}
-        after:absolute after:top-[50px] after:left-[50px] after:content-[''] after:w-[100px] after:h-[100px] after:rounded-full after:${morphism[0]}
+      className={`relative w-[200px] h-[200px] rounded-full ${morphism.clock}
+        before:absolute before:top-2 before:left-2 before:content-[''] before:w-[185px] before:h-[185px] before:rounded-full ${'before:' + morphism.inset}
+        after:absolute after:top-[50px] after:left-[50px] after:content-[''] after:w-[100px] after:h-[100px] after:rounded-full ${'after:' + morphism.inset}
         flex items-center justify-center
         `}
     >

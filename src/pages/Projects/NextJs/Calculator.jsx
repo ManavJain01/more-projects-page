@@ -36,8 +36,8 @@ export default function Calculator({morphism}) {
   }
 
   return (
-    <div className={`w-[350px] h-[450px] flex flex-col gap-5 items-center justify-center rounded-lg ${morphism[0]}`}>
-      <div className={`flex items-end justify-end gap-2 w-[300px] h-[100px] py-2 px-3 rounded-lg ${morphism[1]}`}>
+    <div className={`w-[350px] h-[450px] flex flex-col gap-5 items-center justify-center rounded-lg ${morphism.outset}`}>
+      <div className={`flex items-end justify-end gap-2 w-[300px] h-[100px] py-2 px-3 rounded-lg ${morphism.inset}`}>
         <span>{
           !input2
             ?<span>{input1} {operator}</span>
@@ -54,8 +54,8 @@ export default function Calculator({morphism}) {
               key={i}
               value={e}
               onClick={(e) => getOutput(e)}
-              className={`font-semibold text-lg w-12 h-12 flex justify-center items-center rounded-lg ${morphism[0]}
-                active:text-blue-400 active:${morphism[1]}
+              className={`font-semibold text-lg w-12 h-12 flex justify-center items-center rounded-lg ${morphism.outset}
+                active:text-blue-400 ${'active:' + morphism.inset}
                 `}
             >
               {e}
